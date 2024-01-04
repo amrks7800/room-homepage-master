@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <title>Frontend Mentor | Room homepage</title>
+    <link rel="stylesheet" href="normalize.css" />
+    <link rel="stylesheet" href="style.css" />
+
+    <script defer src="script.js"></script>
+  </head>
+  <body>
+    <main class="main-grid">
+      <header class="primary-header">
+        <img src="./images/logo.svg" alt="room homepage" />
+        <nav class="primary-nav">
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Shop</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </nav>
+      </header>
+      <div class="btn-controls flex" style="--spacer: 0">
+        <button class="btn-control" data-controls="prev">
+          <img
+            src="./images/icon-angle-left.svg"
+            alt="previous"
+          />
+        </button>
+        <button class="btn-control" data-controls="next">
+          <img
+            src="./images/icon-angle-right.svg"
+            alt="next"
+          />
+        </button>
+      </div>
+      <div class="left-scroller" data-scroller>
+        <div class="scroller">
+          <picture data-index="0">
+            <source
+              srcset="./images/desktop-image-hero-1.jpg"
+              media="(min-width: 767px)"
+            />
+            <img
+              src="./images/mobile-image-hero-1.jpg"
+              alt="hero image 1"
+            />
+          </picture>
+          <picture data-index="1">
+            <source
+              srcset="./images/desktop-image-hero-2.jpg"
+              media="(min-width: 767px)"
+            />
+            <img
+              src="./images/mobile-image-hero-2.jpg"
+              alt="hero image 2"
+            />
+          </picture>
+          <picture data-index="2">
+            <source
+              srcset="./images/desktop-image-hero-3.jpg"
+              media="(min-width: 767px)"
+            />
+            <img
+              src="./images/mobile-image-hero-3.jpg"
+              alt="hero image 3"
+            />
+          </picture>
+        </div>
+      </div>
+      <div class="right-scroller" data-scroller>
+        <div class="scroller">
+          <div
+            class="slide text-center-sm mx-auto w-fit"
+            data-index="0"
+          >
+            <h1>Discover innovative ways to decorate</h1>
+            <p>
+              We provide unmatched quality, comfort, and
+              style for property owners across the country.
+              Our experts combine form and function in
+              bringing your vision to life. Create a room in
+              your own style with our collection and make
+              your property a reflection of you and what you
+              love.
+            </p>
+            <button
+              class="mx-auto w-fit button letter-spacing-5 uppercase flex"
+            >
+              Shop now
+              <img
+                src="./images/icon-arrow.svg"
+                alt="arrow"
+              />
+            </button>
+          </div>
+          <div
+            class="slide text-center-sm mx-auto w-fit"
+            data-index="1"
+          >
+            <h1>We are available all across the globe</h1>
+            <p>
+              With stores all over the world, it's easy for
+              you to find furniture for your home or place
+              of business. Locally, we’re in most major
+              cities throughout the country. Find the branch
+              nearest you using our store locator. Any
+              questions? Don't hesitate to contact us today.
+            </p>
+            <button
+              class="mx-auto w-fit button letter-spacing-5 uppercase flex"
+            >
+              Shop now
+              <img
+                src="./images/icon-arrow.svg"
+                alt="arrow"
+              />
+            </button>
+          </div>
+          <div
+            class="slide text-center-sm mx-auto w-fit"
+            data-index="2"
+          >
+            <h1>Manufactured with the best materials</h1>
+            <p>
+              Our modern furniture store provide a high
+              level of quality. Our company has invested in
+              advanced technology to ensure that every
+              product is made as perfect and as consistent
+              as possible. With three decades of experience
+              in this industry, we understand what customers
+              want for their home and office.
+            </p>
+            <button
+              class="mx-auto w-fit button letter-spacing-5 uppercase flex"
+            >
+              Shop now
+              <img
+                src="./images/icon-arrow.svg"
+                alt="arrow"
+              />
+            </button>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./images/image-about-dark.jpg"
+        class="hero-left"
+        alt=""
+      />
+      <div class="about text-center-sm">
+        <h2 class="letter-spacing-5 uppercase">
+          About our furniture
+        </h2>
+        <p>
+          Our multifunctional collection blends design and
+          function to suit your individual taste. Make each
+          room unique, or pick a cohesive theme that best
+          express your interests and what inspires you. Find
+          the furniture pieces you need, from traditional to
+          contemporary styles or anything in between.
+          Product specialists are available to help you
+          create your dream space.
+        </p>
+      </div>
+      <img
+        src="./images/image-about-light.jpg"
+        class="hero-right"
+        alt=""
+      />
+    </main>
+  </body>
+</html>
